@@ -17,4 +17,5 @@ jobs:
           pip3 install torch torchvision torchaudio
           python pytorch-example-evaluate.py
           cat results.txt >> results.md
+
           cml-send-comment results.md
