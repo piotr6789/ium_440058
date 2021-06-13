@@ -55,3 +55,8 @@ rmse = mean_squared_error(tTest, pred.detach().numpy())
 print(f'Accuracy: {accuracy}')
 print(f'F1: {f1_score}')
 print(f'RMSE: {rmse}')
+
+with open("results.txt", 'w') as outfile:
+    outfile.write("Accuracy: " + str(accuracy) + "\n")
+    outfile.write("F1: " + str(f1_score) + "\n")
+    outfile.write("RMSE: " + str(rmse) + "\n")
